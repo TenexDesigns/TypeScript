@@ -73,6 +73,33 @@ Using access modifiers in TypeScript helps you control the visibility of your cl
 
 
 
+READONLY:
+
+Yes, there is a readonly access modifier in TypeScript. The readonly modifier is used to mark class properties as immutable, which means they can only be assigned a value during their declaration or within the constructor of the same class typescripttutorial.net.
+
+Here's an example of using the readonly modifier in a TypeScript class:
+
+class Person {
+  readonly birthDate: Date;
+
+  constructor(birthDate: Date) {
+    this.birthDate = birthDate;
+  }
+}
+
+const person = new Person(new Date(1990, 12, 25));
+person.birthDate = new Date(1991, 12, 25); // This will result in a compile-time error
+In this example, the birthDate property is marked as readonly, which means it can only be initialized in the constructor of the Person class. Attempting to assign a new value to the birthDate property outside the constructor will result in a compile-time error.
+
+You can also consolidate the declaration and initialization of a readonly property in the constructor like this:
+
+class Person {
+  constructor(readonly birthDate: Date) {
+    this.birthDate = birthDate;
+  }
+}
+It is important to note that the readonly modifier is a part of TypeScript's type system and is only used by the compiler to check for illegal property assignments. Once the TypeScript code is compiled to JavaScript, all notions of readonly are gone, and there's no protection against property assignments at runtime mariusschulz.com.
+
 
 
 
