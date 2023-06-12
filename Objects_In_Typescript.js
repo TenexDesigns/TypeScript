@@ -45,11 +45,12 @@ john.name = "John Doe";
 
 
 4.Object Methods:
-Object methods are functions associated with an object. They can perform actions or operations related to the object's data.
+Object methods are functions associated with an object.
+They can perform actions or operations related to the object's data.
 
 
 
-5.Defining Object Methods:
+(a)Defining Object Methods:
 
 const person = {
   name: "John",
@@ -62,7 +63,7 @@ const person = {
 person.greet(); // Output: "Hello, my name is John and I'm 25 years old."
 
 
-6.Object Destructuring:
+5.Object Destructuring:
 
 Object destructuring allows you to extract properties from an object and assign them to variables.
 
@@ -76,7 +77,7 @@ console.log(name); // Output: "John"
 console.log(age); // Output: 25
 
 
-7.Object Spread Operator:
+Object Spread Operator:
 
 The object spread operator allows you to create a new object by copying properties from an 
 existing object and adding or overriding properties.
