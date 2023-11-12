@@ -156,6 +156,21 @@ class AgriLoan implements ILoan {
 
 var obj = new AgriLoan(10, 1);
 console.log("Interest is: " + obj.interest + " Rebate is: " + obj.rebate);
+
+
+
+Method Overriding
+
+Subclasses can override methods defined in their superclass to provide different implementations. Use the super keyword to access the superclass method.
+
+TypeScript
+class Convertible extends Car {
+  override startEngine(): void {
+    super.startEngine(); // Call superclass method first
+    console.log('Opening the convertible top...');
+  }
+}
+Use code with caution. Learn more
 ```
 
 These concepts provide a foundation for creating well-organized and maintainable code using classes in TypeScript.
